@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherScope_current weather</title>
+    <!-- CSS stylesheet for this ejs file  -->
+    <link rel="stylesheet" href="css/ejs-style.css">
+    <!-- Google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Cookie&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>The weather in <%= city %> is <%= weather %> degree celcius </h1>
+    <h3> It can go upto a Maximum Temperature of : <%= max_temp %> degree celcius </h3>
+    <h3>Following a Minimum Temperature of : <%= min_temp %> degree celcius</h3>
+    <h3>Description : <%= about %> </h3>
+
+    
+
+    <form action="/" method="POST">
+        <div class="button_container">
+            <button class="btn" type="submit"><span>Go Back</span></button>  
+        </div>
+    </form>
+</body>
+</html>
